@@ -65,7 +65,7 @@ const ProfilePage = ({ userEmail }) => {
   const handleUpdate = async () => {
     try {
       const { name, email, ...updatedData } = profileData; 
-      const response = await axios.put('http://3.27.110.181:8000/profile', { name, email, ...updatedData });
+      const response = await axios.put('https://mern-guvi-8jpd.onrender.com/profile', { name, email, ...updatedData });
       console.log('Profile updated successfully:', response.data);
       setIsProfileUpdated(true);
       setShowForm(false);
