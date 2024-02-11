@@ -44,7 +44,7 @@ const Login = ({ onLogin, onToggle }) => {
   
     if (validateLoginForm()) {
       try {
-        const response = await axios.post('http://3.27.110.181:8000/login', loginData);
+        const response = await axios.post('https://mern-guvi-8jpd.onrender.com/login', loginData);
 
         console.log('Login successful:', response.data);
         setSuccessMessage('Login successful');

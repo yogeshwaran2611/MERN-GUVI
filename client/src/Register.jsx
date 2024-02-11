@@ -59,7 +59,7 @@ const Register = ({ onToggle, onRegistrationSuccess }) => {
 
     if (validateRegisterForm()) {
       try {
-        const response = await axios.post('http://3.27.110.181:8000/register', registerData);
+        const response = await axios.post('https://mern-guvi-8jpd.onrender.com/register', registerData);
         console.log('Registration successful:', response.data);
         onRegistrationSuccess();
       } catch (error) {

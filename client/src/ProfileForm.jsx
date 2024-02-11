@@ -22,7 +22,7 @@ const ProfilePage = ({ userEmail }) => {
 
   const fetchProfileData = async (email) => {
     try {
-      const response = await axios.get(`http://3.27.110.181:8000/profile?email=${email}`);
+      const response = await axios.get(`https://mern-guvi-8jpd.onrender.com/profile?email=${email}`);
       if (response.data) {
         const { username, age, mobileNumber, gender, dateOfBirth } = response.data;
         const formattedDateOfBirth = dateOfBirth ? new Date(dateOfBirth).toISOString().split('T')[0] : '';
