@@ -8,7 +8,7 @@
     "dev": "nodemon app.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "prod": "cross-env NODE_ENV=production nodemon app.js",
-    "preinstall": "sudo npm rebuild bcrypt"
+    "preinstall": "npm install bcrypt"
   },
   "keywords": [],
   "author": "",
