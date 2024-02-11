@@ -7,7 +7,8 @@
     "start": "node app.js",
     "dev": "nodemon app.js",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "prod": "cross-env NODE_ENV=production nodemon app.js"
+    "prod": "cross-env NODE_ENV=production nodemon app.js",
+    "preinstall": "npm rebuild bcrypt"
   },
   "keywords": [],
   "author": "",
@@ -23,4 +24,6 @@
   "devDependencies": {
     "cross-env": "^7.0.3"
   }
+
+  
 }
