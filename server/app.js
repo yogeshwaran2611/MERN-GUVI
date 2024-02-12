@@ -22,7 +22,10 @@ let profileData = {};
 app.post('/register', registerUser);
 app.post('/login', loginUser);
 
-
+app.get('/login', (req, res) => {
+  // Assuming you have a login.html file in your client/build folder
+  res.sendFile(path.join(__dirname, '../client/build/login.html'));
+});
 
 app.get('/profile', async (req, res) => {
     const { email } = req.query;

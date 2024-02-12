@@ -94,6 +94,7 @@ const ProfilePage = ({ userEmail }) => {
     }));
   };
   
+  
 
   const handleLogout = () => {
     window.location.href = '/login';
