@@ -130,7 +130,7 @@ const Register = ({ onToggle, onRegistrationSuccess }) => {
                             <div className="input flex">
                                 <BsFillShieldLockFill className="icon" />
                                 <input
-            type="password" id='password' placeholder='Enter Password'
+            type="password" id='Confirmpassword' placeholder='Enter Password'
             name="confirmPassword"
             value={registerData.confirmPassword}
             onChange={handleRegisterChange}
