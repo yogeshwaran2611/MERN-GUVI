@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-const atlasUri = 'mongodb+srv://yogi:yogi@cluster0.rurrxxl.mongodb.net/?retryWrites=true&w=majority';
+const atlasUri = 'mongodb+srv://yogi:yogi@cluster0.qmkszy2.mongodb.net/?retryWrites=true&w=majority';
 
 mongoose.connect(atlasUri);
 
