@@ -97,8 +97,8 @@ const ProfilePage = ({ userEmail }) => {
   
 
   const handleLogout = () => {
-    window.location.href = '/login';
-  };
+  window.location.href = '/login';
+};
 
   return (
     <div className="container111" >
